@@ -6,18 +6,18 @@
   "packageRules": [
     { /* Automerge all but major dependency updates */
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,  /* Whether to automerge branches/PRs automatically, without human intervention. */
+      "automerge": true  /* Whether to automerge branches/PRs automatically, without human intervention. */
     },
     { /* Apply a special label to major updates */ 
       "matchUpdateTypes": ["major"],
-      "labels": ["MAJOR"],
+      "labels": ["MAJOR"]
     }
   ],
   "dependencyDashboard": true, /* Whether to create a "Dependency Dashboard" issue in the repository. */
   "major": {
-    "dependencyDashboardApproval": true, /* Require approval for major updates. */
+    "dependencyDashboardApproval": true  /* Require approval for major updates. */
   },
   "prConcurrentLimit": 5, /* Limit to a maximum of 10 concurrent branches/PRs. */
   "prCreation": "immediate", /* Renovate creates PRs immediately after creating the corresponding branch */
-  "prHourlyLimit": 2,
+  "prHourlyLimit": 2
 }
