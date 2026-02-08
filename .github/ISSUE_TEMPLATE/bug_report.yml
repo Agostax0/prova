@@ -16,7 +16,6 @@ body:
       placeholder: I was clicking X, expecting Y but Z happened"
     validations:
       required: true
-
   - type: input
     id: user-action
     attributes:
@@ -24,7 +23,6 @@ body:
       placeholder: I was clicking X
     validations:
       required: true
-  
   - type: input
     id: user-expectation
     attributes:
@@ -32,13 +30,11 @@ body:
       placeholder: I was expecting Y
     validations:
       required: true
-
   - type: input
     id: user-consequences
     attributes:
       label: What happened instead?
       placeholder: Z happened instead of Y
-
   - type: dropdown
     id: severity
     attributes:
@@ -52,24 +48,21 @@ body:
         - Low/Trivial (S5): Minimal or no impact; often minor enhancements or style issues. 
       validations:
         required: true
-
   - type: textarea
     id: severity-explanation
     attributes:
-      label: "Describe the severity/severities in relation to the bug"
+      label: Describe the severity/severities in relation to the bug
       description: A clear and concise description of what the bug is and its severity.
     validations:
       required: true
-
   - type: textarea
     id: user-logs
     attributes:
-      label: "Application logs"
+      label: Application logs
       description: Provide any application logs if available
       render: shell
     validations:
       required: false
-
   - type: textarea
     id: dropdown
     attributes:
