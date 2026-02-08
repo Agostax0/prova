@@ -39,15 +39,15 @@ body:
     id: severity
     attributes:
       label: What is the severity of this bug?
-      multiple: true
+      multiple: false
       options:
-        - Critical (S1): The bug causes a complete system crash, data loss, or renders the application unusable (e.g., login failure, app freezes). 
-        - Major (S2): A core feature is broken with no viable workaround (e.g., checkout fails, search returns no results). 
-        - Minor (S3): The bug affects functionality but the system remains usable; a workaround exists (e.g., date format error, minor UI misalignment). 
-        - Cosmetic (S4): No functional impact; issues are visual (e.g., typos, color mismatches, button alignment). 
-        - Low/Trivial (S5): Minimal or no impact; often minor enhancements or style issues. 
-      validations:
-        required: true
+        - Critical (S1): The bug causes a complete system crash, data loss, or renders the application unusable (e.g., login failure, app freezes).
+        - Major (S2): A core feature is broken with no viable workaround (e.g., checkout fails, search returns no results).
+        - Minor (S3): The bug affects functionality but the system remains usable; a workaround exists (e.g., date format error, minor UI misalignment).
+        - Cosmetic (S4): No functional impact; issues are visual (e.g., typos, color mismatches, button alignment).
+        - Low/Trivial (S5): Minimal or no impact; often minor enhancements or style issues.
+    validations:
+      required: true
   - type: textarea
     id: severity-explanation
     attributes:
@@ -63,15 +63,14 @@ body:
       render: shell
     validations:
       required: false
-  - type: textarea
-    id: dropdown
+  - type: dropdown
+    id: system
     attributes:
       label: What system are you running?
-      multiple: true
+      multiple: false
       options:
         - Linux
         - Windows
         - MacOS
-      validations:
-        required: false
-     
+    validations:
+      required: false
