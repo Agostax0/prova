@@ -4,10 +4,11 @@
   ],
   "baseBranchPatterns": ["develop"], /* This configuration option was formerly known as baseBranches */
   "assigneesFromCodeOwners": true, /* Determine assignees based on configured code owners and changes in PR. */
+  "automerge": true,
   "packageRules": [
     { /* Automerge all but major dependency updates */
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true  /* Whether to automerge branches/PRs automatically, without human intervention. */
+      "matchUpdateTypes": ["major"],
+      "automerge": false  /* Whether to automerge branches/PRs automatically, without human intervention. */
     },
     { /* Apply a special label to major updates */ 
       "matchUpdateTypes": ["major"],
