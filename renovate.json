@@ -17,7 +17,7 @@
   "major": {
     "dependencyDashboardApproval": true  /* Require approval for major updates. */
   },
-  "prConcurrentLimit": 5, /* Limit to a maximum of 10 concurrent branches/PRs. */
+  "prConcurrentLimit": 5, /* Limit to a maximum of 5 concurrent branches/PRs. */
   "prCreation": "immediate", /* Renovate creates PRs immediately after creating the corresponding branch */
   "prHourlyLimit": 2
 }
