@@ -1,48 +1,49 @@
 name: "Bug report"
 description: Create a bug report to help us improve our project
 title: "[BUG]"
-labels: [bug]
+labels: ["bug"]
+type: bug
 body:
   - type: input
     id: title
     attributes:
-      label: "Summary title"
+      label: Summary title
     validations:
       required: true
   - type: input
     id: problem-details
     attributes:
-      label: "Where was this bug encountered"
-      placeholder: "I was clicking x, expecting y but z happened"
+      label: Where was this bug encountered
+      placeholder: I was clicking X, expecting Y but Z happened"
     validations:
       required: true
 
   - type: input
     id: user-action
     attributes:
-      label: "What were you doing?"
-      placeholder: I was clicking "x""
+      label: What were you doing?
+      placeholder: I was clicking X
     validations:
       required: true
   
   - type: input
     id: user-expectation
     attributes:
-      label: "What were you expecting?"
-      placeholder: "I was expecting y"
+      label: What were you expecting?
+      placeholder: I was expecting Y
     validations:
       required: true
 
   - type: input
     id: user-consequences
     attributes:
-      label: "What happened instead?"
-      placeholder: "z happened instead of y"
+      label: What happened instead?
+      placeholder: Z happened instead of Y
 
   - type: dropdown
     id: severity
     attributes:
-      label: "What is the severity of this bug?"
+      label: What is the severity of this bug?
       multiple: true
       options:
         - Critical (S1): The bug causes a complete system crash, data loss, or renders the application unusable (e.g., login failure, app freezes). 
@@ -66,6 +67,7 @@ body:
     attributes:
       label: "Application logs"
       description: Provide any application logs if available
+      render: shell
     validations:
       required: false
 
