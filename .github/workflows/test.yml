@@ -1,0 +1,9 @@
+name: Always Pass
+on: [push, pull_request]
+
+jobs:
+  success:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pass workflow
+        run: echo "This workflow always passes."   
