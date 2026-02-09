@@ -3,7 +3,6 @@
     "github>DanySK/renovate-config:develop.json" /* This includes DanySK/renovate-config:default.json */
   ],
   "baseBranchPatterns": ["develop"], /* This configuration option was formerly known as baseBranches */
-  "assigneesFromCodeOwners": true, /* Determine assignees based on configured code owners and changes in PR. */
   "packageRules": [
     { /* Automerge all but major dependency updates */
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
@@ -16,6 +15,7 @@
   ],
   "dependencyDashboard": true, /* Whether to create a "Dependency Dashboard" issue in the repository. */
   "major": {
+    "assigneesFromCodeOwners": true, /* Determine assignees based on configured code owners and changes in PR. */
     "dependencyDashboardApproval": true  /* Require approval for major updates. */
   },
   "prConcurrentLimit": 5, /* Limit to a maximum of 5 concurrent branches/PRs. */
