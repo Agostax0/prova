@@ -16,7 +16,6 @@
   ],
   "dependencyDashboard": true, /* Whether to create a "Dependency Dashboard" issue in the repository. */
   "major": {
-    "assigneesFromCodeOwners": true, /* Determine assignees based on configured code owners and changes in PR. */
     "dependencyDashboardApproval": true  /* Require approval for major updates. */
   },
   "prConcurrentLimit": 5, /* Limit to a maximum of 5 concurrent branches/PRs. */
