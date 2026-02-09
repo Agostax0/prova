@@ -21,6 +21,7 @@
     "@types/marvelapp__react-ab-test": "^3.1.0",
     "express": "^5.2.0",
     "react": "^19.0.0",
+    "type-is": "^2.0.0",
     "vue": "^3.4.36"
   }
 }
