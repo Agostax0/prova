@@ -1,0 +1,6 @@
+```mermaid
+graph LR;
+;root  ;munchies ;prova
+
+linkStyle default stroke-width:1px;
+```
