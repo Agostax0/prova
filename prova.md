@@ -1,6 +1,6 @@
 ```mermaid
 graph LR;
-"root  munchies"
+;root  ;munchies
 
 linkStyle default stroke-width:1px;
 ```
